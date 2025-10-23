@@ -28,6 +28,15 @@
                         break;
 
 
+                    case "add":
+                        int element1 = int.Parse(cmd[1]);
+                        int element2 = int.Parse(cmd[2]);
+
+                        nums.Add(element1 + element2);
+                        break;
+
+
+
                     //TO DO
                     default:
                         break;
