@@ -23,16 +23,29 @@
                         Console.WriteLine(string.Join(" ", nums));
                         break;
                     case "contains":
-                        
-                        //TODO
-                        break;
 
+                        num = int.Parse(cmd[1]);
+                        if (nums.Contains(num))
+                        {
+                            Console.WriteLine("Yes");
+                        }
+                        else
+                        {
+                            Console.WriteLine("No");
+                        }
+                        break;
 
                     case "add":
                         int element1 = int.Parse(cmd[1]);
                         int element2 = int.Parse(cmd[2]);
 
                         nums.Add(element1 + element2);
+                        break;
+                    case "remove":
+                        int element3 = int.Parse((string)cmd[1]);
+                        int element4 = int.Parse((string)cmd[2]);
+
+                        nums.Remove(element3 - element4);
                         break;
 
                     case "countl":
