@@ -35,6 +35,13 @@
                         nums.Add(element1 + element2);
                         break;
 
+                    case "countl":
+                          int number = int.Parse(cmd[1]);
+                        int count = nums.Count(n => n > number);
+                        Console.WriteLine(count);
+                        break;
+
+
 
 
                     //TO DO
