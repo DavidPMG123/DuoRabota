@@ -47,6 +47,10 @@
 
                         nums.Remove(element3 - element4);
                         break;
+                    case "countOdds":
+                        int count = nums.Count(x => x % 2 != 0);
+                        Console.WriteLine(count);
+                        break;
 
 
 
