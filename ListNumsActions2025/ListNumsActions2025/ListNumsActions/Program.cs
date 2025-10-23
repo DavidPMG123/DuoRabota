@@ -48,6 +48,11 @@
                         nums.Remove(element3 - element4);
                         break;
 
+                    case "countOdds":
+                        int count2 = nums.Count(x => x % 2 != 0);
+                        Console.WriteLine(count2);
+                        break;
+
                     case "countl":
                           int number = int.Parse(cmd[1]);
                         int count = nums.Count(n => n > number);
