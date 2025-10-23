@@ -52,6 +52,13 @@
                         Console.WriteLine(count);
                         break;
 
+                    case "countl":
+                          int number = int.Parse(cmd[1]);
+                        int count = nums.Count(n => n > number);
+                        Console.WriteLine(count);
+                        break;
+
+
 
 
                     //TO DO
